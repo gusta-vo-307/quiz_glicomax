@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Preferências</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+   
+    <div class="alingimg">
+      <img src="./img/img/2.svg"  style="width: 100%;" alt="Imagem médica">
+    </div>
+   
+    <div class="progress-container">
+      <div class="progress-bar" style="--value: 100%;" id="progress-bar"></div>
+    </div>
+
+    <h1 style="color: #4caf50; font-size: 40px;">Concluído !</h1>
+    <h2 style="color: #00a97c; font-size: 14px; margin: 15px auto;">4/4</h2>
+
+    <div class="container">
+            <div class="option" onclick="goToNextPage('consultoria_sim.html')">
+        <strong>Sim</strong>
+      </div>
+      <div class="option" onclick="goToNextPage('consultoria_nao.html')">
+        <strong>Não</strong>
+      </div>
+    </div>
+  </body>
+</html>
