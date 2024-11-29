@@ -8,20 +8,36 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <h1 style="color: #00a97c; font-size: 20px">
+      Responda um questionário rápido
+    </h1>
+
+    <div class="alingimg">
+      <img src="./img/indeximg.png" alt="" />
+    </div>
+
+    <h2 style="color: #00a97c; font-size: 14px">1/4</h2>
+
+    <div class="progress-container">
+      <div class="progress-bar" style="--value: 25%" id="progress-bar"></div>
+    </div>
+
     <div class="container">
-      <h1>Qual a sua idade?</h1>
       <div class="option" onclick="goToNextPage('quiz2.html')">
-        Menos de 18 anos.
+        18 anos ou mais.
       </div>
+
       <div class="option" onclick="goToNextPage('quiz2.html')">
         Tenho entre 18 e 25 anos.
       </div>
+
       <div class="option" onclick="goToNextPage('quiz2.html')">
         Tenho entre 26 e 35 anos.
       </div>
+
       <div class="option" onclick="goToNextPage('quiz2.html')">
         Tenho mais de 35 anos.
       </div>
     </div>
   </body>
-</html> 
+</html>
