@@ -6,6 +6,44 @@
     <title>Quiz - Diabetes</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden; /* Impede o usuário de rolar a tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+      }
+      .option {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+        padding: 15px;
+        text-align: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .progress-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px 0;
+      }
+      .alingimg img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
     <div class="alingimg">
@@ -16,7 +54,7 @@
     <div class="progress-container">
       <div class="progress-bar" style="--value: 50%" id="progress-bar"></div>
     </div>
-    
+
     <div class="container">
       <div class="option" onclick="goToNextPage('quiz3.html')">
         Menos de 1 ano

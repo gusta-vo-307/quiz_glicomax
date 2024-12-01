@@ -6,6 +6,55 @@
     <title>Quiz - Diabetes</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden; /* Impede a rolagem da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+      }
+      .option {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+        padding: 15px;
+        text-align: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .option:hover {
+        background-color: #e0e0e0;
+      }
+      .progress-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px 0;
+      }
+      .progress-bar {
+        width: var(--value);
+        height: 20px;
+        background-color: #00a97c;
+        border-radius: 10px;
+      }
+      .alingimg img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
     <div class="alingimg">
@@ -19,9 +68,7 @@
       <div class="option" onclick="goToNextPage('quiz4.html')">Metformina</div>
       <div class="option" onclick="goToNextPage('quiz4.html')">Glifage</div>
       <div class="option" onclick="goToNextPage('quiz4.html')">Outros</div>
-      <div class="option" onclick="goToNextPage('quiz4.html')">
-        Nunca
-      </div>
+      <div class="option" onclick="goToNextPage('quiz4.html')">Nunca</div>
     </div>
   </body>
-</html>
+</html></div>

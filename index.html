@@ -6,13 +6,71 @@
     <title>Quiz - Idade</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden; /* Impede a rolagem da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      .alingimg {
+        text-align: center;
+      }
+
+      .progress-container {
+        width: 80%;
+        margin: 20px 0;
+      }
+
+      .progress-bar {
+        width: var(--value);
+        height: 20px;
+        background-color: #00a97c;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+      }
+
+      .option {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .option:hover {
+        background-color: #e0e0e0;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          width: 50%;
+        }
+
+        .progress-container {
+          width: 50%;
+        }
+      }
+    </style>
   </head>
   <body>
-    
     <div class="alingimg">
       <img src="./img/3.svg" alt="" />
     </div>
-   
+
     <h2 style="color: #00a97c; font-size: 14px">1/4</h2>
 
     <div class="progress-container">
@@ -29,7 +87,7 @@
       </div>
 
       <div class="option" onclick="goToNextPage('quiz2.html')">
-         35 a 44 anos
+        35 a 44 anos
       </div>
 
       <div class="option" onclick="goToNextPage('quiz2.html')">
